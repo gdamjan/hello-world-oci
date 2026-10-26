@@ -1,0 +1,4 @@
+ID=hello-world-oci
+NAME="Hello World OCI"
+PRETTY_NAME="Hello World OCI"
+HOME_URL="https://github.com/gdamjan/hello-world-oci"
