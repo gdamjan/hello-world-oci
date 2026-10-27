@@ -9,8 +9,16 @@ sudo portablectl attach --now hello-world-oci
 ```
 
 ## Build and run with Podman (or Docker)
+
+Same image works with Podman/Docker:
+
 ```
 $ podman build -t hello-world .
 $ podman run -it --rm hello-world
+Hello, World!
+```
+or
+```
+$ podman run -it --rm ghcr.io/gdamjan/hello-world-oci:latest
 Hello, World!
 ```
