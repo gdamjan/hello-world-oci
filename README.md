@@ -22,3 +22,10 @@ or
 $ podman run -it --rm ghcr.io/gdamjan/hello-world-oci:latest
 Hello, World!
 ```
+
+## nspawn
+Interestingly, this also works:
+```
+sudo importctl pull-oci --class=machine ghcr.io/gdamjan/hello-world-oci
+sudo systemd-nspawn --mstack=/var/lib/machines/hello-world-oci.mstack /hello
+```
